@@ -63,7 +63,27 @@ The MVP viewer provides:
 
 ## Roadmap
 
-- Layer Focus mode for inspecting one layer and its direct context
-- Lineage View for tracing `Source -> Knowledge -> Idea -> Project -> Source`
-- richer Obsidian vault authoring helpers
-- Obsidian plugin integration with a custom SKIP Topology view
+### v0.1: Local Topology MVP
+
+- keep the Markdown vault, strict exporter, and 3D viewer working as one local loop
+- improve Project Focus so each project clearly shows upstream knowledge, implemented ideas, and generated sources
+- add small UI affordances for edge legends, generated-source labels, and graph reset
+
+### v0.2: Navigation Modes
+
+- add Layer Focus for inspecting one layer and its direct context
+- add Lineage View for tracing `Source -> Knowledge -> Idea -> Project -> Source`
+- add search and node filtering by type, topic, status, and project
+
+### v0.3: Vault Authoring Workflow
+
+- add validation reports that point back to exact Markdown files and fields
+- add richer templates for common source, knowledge, idea, and project variants
+- explore optional typed wikilink authoring helpers while keeping frontmatter as the source of truth
+
+### v0.4: Obsidian Integration
+
+- package the viewer as an Obsidian custom view
+- read the active vault directly through the Obsidian Plugin API
+- open source notes from graph node clicks
+- keep plugin integration local-first, with no cloud dependency
